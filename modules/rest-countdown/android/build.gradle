@@ -1,0 +1,20 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'com.mgym'
+version = '1.0.0'
+
+android {
+  namespace "expo.modules.restcountdown"
+  defaultConfig {
+    versionCode 1
+    versionName "1.0.0"
+  }
+}
+
+dependencies {
+  // A mesma versão do expo-notifications (SDK 58).
+  implementation 'androidx.core:core:1.17.0'
+}
